@@ -6,9 +6,7 @@ class CalculatorDetails extends React.Component {
 
         const {amount, months, ltv, repayment} = this.props;
 
-        
-
-        // Calculate APR
+        // Calculations
         let apr = (Number(ltv) / 10) + 4;
 
         let monthlyInterestRate = (apr / 100) / 12;
@@ -23,6 +21,7 @@ class CalculatorDetails extends React.Component {
 
         let lastPayment = Number(amount) + interestOnly;
 
+        // Formats numbers to round to the nearest hundredth decimal place and adds commas 
         let numberFormat = (number) => {
             let num = parseInt(number);
             num = Math.round(100 * number) / 100;
