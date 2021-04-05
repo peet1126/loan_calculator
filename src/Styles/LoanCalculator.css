@@ -1,0 +1,357 @@
+.loan-calculator {
+  margin: 0 auto;
+  width: 767px;
+  height: 80vh;
+}
+
+.calculator {
+  border: 1px solid white;
+  width: 100%;
+  margin: auto;
+  height: auto;
+  display: flex;
+}
+
+/* Calculator Form */
+
+.calculator-form {
+  width: 50%;
+  background-color: #28283d;
+  font-weight: 300;
+}
+
+.loan-calculator-layout {
+  padding: 12%;
+}
+
+.calculator-form form {
+  width: 100%;
+}
+
+.calculator-form input {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.calculator-form form div.form {
+  margin: 40px 0 0 0;
+}
+
+.calculator-form label {
+  margin: 10px 0px;
+}
+
+.calculator-form #form-amount {
+  margin: 0px 0px 40px 0px;
+}
+
+.calculator-form #form-repayment {
+  margin: 40px 0px 0px 0px;
+}
+
+#amount {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border: 1px solid #fff;
+  border-radius: 0.25rem;
+  height: 3rem;
+  font-size: large;
+  line-height: normal;
+  outline: none;
+  padding: 0 20px;
+  width: 90%;
+  color: #fff;
+}
+
+::placeholder {
+  color: #00ffc3;
+  font-size: 1em;
+  padding: 0%;
+}
+
+.radio-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-div input {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radio-div label {
+  padding: 10px 10px;
+  font-family: sans-serif, Arial;
+  font-size: 16px;
+  border: 1px solid #fff;
+  border-radius: 0.25rem;
+}
+
+.radio-div label:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.radio-div.repayment label {
+  width: 50%;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio-div label.is-active {
+  background-color: #00ffc3;
+  border-color: #00ffc3;
+  color: #000;
+}
+
+/* Number input styles */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input:internal-autofill-previewed {
+  background-color: #28283d;
+}
+
+.input-error {
+  color: red;
+  font-weight: 700;
+}
+
+#form-amount i {
+  position: absolute;
+}
+
+.input-container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding: 26px 10px;
+  color: #00ffc3;
+}
+
+/* Range input styles */
+
+input[type="range"] {
+  height: 23px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+  background-color: #28283d;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 11px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background-image: url("/src/Styles/range.png");
+  background-size: 99.5%;
+  background-position: 0px;
+  /* background: linear-gradient(90deg, #fff 0.1em, transparent 0.1em) -1px 0 border-box
+    #28283d;
+
+  background-size: 0.6rem 100%; */
+  border-radius: 1px;
+  border: 0px solid #010101;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000031;
+  border: 1px solid #00001e;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  background: #00ffc3;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -2.5px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background-image: url("/src/Styles/range.png");
+  background-size: 99.5%;
+  background-position: 0px;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 11px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #28283d;
+  border-radius: 1px;
+  border: 0px solid #010101;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000031;
+  border: 1px solid #00001e;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  background: #00ffc3;
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 11px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #28283d;
+  border: 0px solid #010101;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #28283d;
+  border: 0px solid #010101;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000031;
+  border: 1px solid #00001e;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  background: #00ffc3;
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #28283d;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #28283d;
+}
+
+/* Range Value bubble */
+#bubble-div {
+  text-align: center;
+}
+
+.bubble {
+  color: white;
+}
+
+/* Calculator Details */
+
+.calculator-details {
+  width: 50%;
+  background-color: #00ffc3;
+  color: #28283d;
+}
+
+.calculator-layout {
+  padding: 30px 60px;
+}
+
+.calculator-details h4 {
+  font-weight: 500;
+}
+
+.calculator-details span {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.calculator-details .monthly-payment-label {
+  margin: 0 0 20px 0;
+}
+
+.calculator-details .monthly-payment-amount {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#last-payment {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.loan-stats-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-top: 14px;
+}
+
+.loan-stats-row h4 {
+  font-size: small;
+  margin: 20px 0px 5px 0px;
+}
+
+/* Loan Collateral */
+
+#collateral-needed {
+  font-size: small;
+  margin: 35px 0 5px 0;
+}
+
+.crypto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0px;
+  margin-top: 14px;
+}
+
+.crypto-amount {
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+  margin: 10px 40px 0 0;
+}
+
+.crypto-amount span {
+  font-size: small;
+  font-weight: 500;
+  margin: 0px 5px;
+}
+
+/* Responsive styles  */
+
+@media screen and (max-width: 767px) {
+  .calculator {
+    display: contents;
+  }
+
+  .loan-calculator {
+    width: 400px;
+  }
+
+  .calculator-form,
+  .calculator-details {
+    margin: 0px auto;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .loan-calculator {
+    width: 835px;
+  }
+}

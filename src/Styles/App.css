@@ -1,0 +1,12 @@
+.App {
+  height: 100vh;
+  background-color: #28283d;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+.salt-logo {
+  padding: 30px;
+  width: 100px;
+  height: 100px;
+}
