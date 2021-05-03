@@ -50,13 +50,13 @@ class LoanCollateral extends React.Component {
         const {amount, ltv} = this.props;
         // const {BTC, ETH, DASH, BCH, DOGE, LTC} = this.state;
         
-        let tokens = Object.entries(this.state);
+        const tokens = Object.entries(this.state);
 
         let collateral = (Number(amount) / (ltv / 100));
         collateral =  this.props.numberFormat(collateral)
 
-        let tokensNeeded = tokens.map(token => {
-            let symbol = "/img/cryptocurrency-icons/32/black/" + token[0].toLowerCase() + ".png"
+        const tokensNeeded = tokens.map(token => {
+            const symbol = "/img/cryptocurrency-icons/32/black/" + token[0].toLowerCase() + ".png"
             return (
                 <div className="crypto-amount" key={token[0]}>
                     <img src={symbol} alt="Bitcoin"/>
