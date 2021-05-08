@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Styles/LoanCalculator.css'
 
 class LoanCollateral extends React.Component {
     constructor(props) {
