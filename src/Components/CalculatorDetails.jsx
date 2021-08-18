@@ -6,13 +6,8 @@ class CalculatorDetails extends React.Component {
 
         const {amount, months, ltv, repayment} = this.props;
 
-<<<<<<< HEAD
-        // Calculations -- 
-        let apr = (Number(ltv) / 10) + 4;
-=======
-        // Calculations
+        // Calculations --
         const apr = (Number(ltv) / 10) + 4;
->>>>>>> 9853b43ae7d884249b869fe4c3b6c1fa6babfd09
 
         const monthlyInterestRate = (apr / 100) / 12;
     
